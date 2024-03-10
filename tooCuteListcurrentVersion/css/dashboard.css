@@ -4,6 +4,8 @@
 body {
     position: relative;
     min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .task-prompt{
@@ -46,18 +48,20 @@ body {
 
 /*bottom section*/
 .bottom-section {
-    padding: 4em 1em 1em 1em;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-top: 4em;
     position: relative;
 }
 
 @media(min-width:500px) {
     .bottom-section {
-        padding: 6em 1em 1em 1em;
+        padding-top: 6em;
     }
 }
 
 .tasks-container {
-    padding: 1em 0 3em 0;
+    padding: 1em 1em 3em 1em;
     display: flex;
     justify-content: center;
     align-items: flex-start;

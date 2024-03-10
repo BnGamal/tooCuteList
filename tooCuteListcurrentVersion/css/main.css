@@ -140,8 +140,53 @@ header button .text {
     overflow: hidden;
 }
 
-/*components to override*/
+/*footer*/
 
+footer {
+    padding: 0 1em;
+    align-self: end;
+}
+
+footer p {
+    text-align: right;
+    font-size: .9rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    border-top: 1px solid var(--primary-clr);
+    color: #676767;
+}
+
+footer .github-anchor {
+    border-radius: 5px;
+    padding: .1em .3em;
+    animation: changing-color infinite 3s linear alternate;
+}
+
+@keyframes changing-color {
+    0% {
+        box-shadow: none;
+        background-color: transparent;
+        color: inherit;
+    } 55% {
+        box-shadow: 0 0 20px var(--primary-clr);
+        background-color: var(--primary-clr);
+        color: var(--bg-clr);
+    } 65% {
+        box-shadow: 0 0 20px var(--primary-clr);
+        background-color: var(--primary-clr);
+        color: var(--bg-clr);
+    } 100% {
+        box-shadow: none;
+        background-color: transparent;
+        color: inherit;
+    }
+}
+
+footer .github-anchor i {
+    margin-left: .3em;    
+}
+
+/*components to override*/
 .unfunctional {
     position: relative;
 }
@@ -155,18 +200,18 @@ header button .text {
     transform: translate(-50%, -50%);
     border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent var(--primary-clr-light) transparent;
+    border-color: transparent transparent white transparent;
 }
 
 .unfunctional:hover::after {
     content: "not functional yet!";
+    width: max-content;
     font-size: .9rem;
     background-color: white;
     position: absolute;
     left: 50%;
     top: 100%;
-    color: var(--primary-clr-light);
-    border: 5px solid var(--primary-clr-light);
+    color: var(--primary-clr);
     border-radius: 5px;
     transform: translate(-50%, 10px);
     padding: 0.5em;

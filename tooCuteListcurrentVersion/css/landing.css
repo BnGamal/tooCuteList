@@ -64,11 +64,11 @@ header {
 }
 
 /*bottom section*/
-.bottom-section {
-    padding: 0 1em 1em 1em;
+.bottom-section .description-container {
+    padding: 0 1em 0 1em;
 }
 
-.bottom-section p {
+.bottom-section .description {
     padding-top: 13%;
     margin: auto;
     max-width: 800px;
@@ -80,6 +80,7 @@ header {
 .get-started {
     text-transform: uppercase;
     display: block;
+    width: fit-content;
     font-size: 1rem;
     font-weight: bold;
     margin: 2em auto;
@@ -87,7 +88,7 @@ header {
 
 
 @media(min-width:450px) {
-    .bottom-section p {
+    .bottom-section .description {
         font-size: 1.5rem;
     }
 
@@ -97,7 +98,7 @@ header {
 }
 
 @media(min-width:950px) {
-    .bottom-section p {
+    .bottom-section .description {
         padding-top: 11%;
     }
 }

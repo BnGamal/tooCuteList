@@ -2,11 +2,6 @@
 
 
 
-
-
-
-
-
 // global variables
 let storedTasks = {}
 let totalTasksNumber = 0;
