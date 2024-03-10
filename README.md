@@ -1,6 +1,5 @@
-# Visit The Website on [[https://amazing-dolphin-99c357.netlify.app/]]
-
-# Problems to Solve:
+### Visit The Website on => *[tooCuteList](https://amazing-dolphin-99c357.netlify.app/)*.
+## Problems to Solve:
 1. Change the carousel tasks areas, they look awful.
 2. Made another uneccessary div for the carousel overflow.
 3. Change the landing tasks' text.
@@ -8,8 +7,7 @@
 5. Change `querySelector` with `getElementById`, using multiple html files it's hard to choose specific elements.
 6. title doesn't perserve it's place when it's empty and the paragraph is not empty
 7. make the 'not functional yet' hover effect follow the cursor
-
-# Want to Add:
+## Want to Add:
 1. Cosider the timeline of the task added (prepend vs append).
 2. Scroll on task to make a flip animation that makes that task marked as "done".
 2. Make 'guide tour' on how to use the website.
