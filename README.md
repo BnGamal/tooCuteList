@@ -1,4 +1,10 @@
-### Visit The Website on => *[tooCuteList](https://amazing-dolphin-99c357.netlify.app/)*.
+
+
+
+### Visit The Website on => *[tooCuteList](https://toocutelist.netlify.app/)*.
+## Urgent Problems:
+1. make the focus on the title of the prompt when it shows up
+2. the logo goes right when the 'menu' button changes it's text to 'close' since it's somehow shorter.
 ## Problems to Solve:
 1. Change the carousel tasks areas, they look awful.
 2. Made another uneccessary div for the carousel overflow.

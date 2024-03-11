@@ -1,0 +1,104 @@
+
+
+
+/*style*/
+
+/*top section*/
+.carousel-overflow {
+    overflow: hidden;
+}
+
+.carousels-container {
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
+    animation: carousel-horizontal-movement 20s infinite linear;
+    min-width: fit-content;
+}
+
+@keyframes carousel-horizontal-movement {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel {
+    padding: 1em .5em;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.carousel .task {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel
+
+.colspan-2 {
+    grid-column: auto / span 2;
+}
+
+.colspan-3 {
+    grid-column: auto / span 3;
+}
+
+.colspan-4 {
+    grid-column: auto / span 4;
+}
+
+.rowspan-2 {
+    grid-row: auto / span 2;
+}
+
+header {
+    padding: 0 1em 1em 1em;
+    align-items: flex-end;
+}
+
+/*bottom section*/
+.bottom-section .description-container {
+    padding: 0 1em 0 1em;
+}
+
+.bottom-section .description {
+    padding-top: 13%;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    color: var(--primary-clr);
+    font-size: 1.2rem;
+}
+
+.get-started {
+    text-transform: uppercase;
+    display: block;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2em auto;
+}
+
+
+@media(min-width:450px) {
+    .bottom-section .description {
+        font-size: 1.5rem;
+    }
+
+    .get-started {
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width:950px) {
+    .bottom-section .description {
+        padding-top: 11%;
+    }
+}
