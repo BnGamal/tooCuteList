@@ -1,6 +1,3 @@
-
-
-
 ### Visit The Website on => *[tooCuteList](https://toocutelist.netlify.app/)*.
 ## Urgent Problems:
 1. make the focus on the title of the prompt when it shows up
