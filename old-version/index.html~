@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <title>too cute list</title>
+</head>
+<body>
+
+  <section class="landing-page">
+
+    <div class="btn ctrl-btn controls-min">
+      <i class="fa-solid fa-bars"></i> 
+    </div>
+
+    <div class=carousel>
+      <div class='scroll-a'>
+        <span class="task">task1</span>
+        <span class="task span-row">task2</span>
+        <span class="task">task3</span>
+        <span class="task">task4</span>
+        <span class="task span-row">task5</span>
+        <span class="task">task6</span>
+        <span class="task">task7</span>
+        <span class="task span-row">task8</span>
+        <span class="task span-row">task9</span>
+        <span class="task span-row">task10</span>
+        <span class="task">task11</span>
+        <span class="task">task12</span>
+        <span class="task">task13</span>
+      </div><div class='scroll-a'>
+        <span class="task">task1</span>
+        <span class="task span-row">task2</span>
+        <span class="task">task3</span>
+        <span class="task">task4</span>
+        <span class="task span-row">task5</span>
+        <span class="task">task6</span>
+        <span class="task">task7</span>
+        <span class="task span-row">task8</span>
+        <span class="task span-row">task9</span>
+        <span class="task span-row">task10</span>
+        <span class="task">task11</span>
+        <span class="task">task12</span>
+        <span class="task">task13</span>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="controls-max">
+        <span class="btn ctrl-btn switch-lang-btn">
+          <i class="fa-solid fa-earth-africa"></i>
+        </span><span class="btn ctrl-btn switch-theme-btn">
+          <i class="fa-regular fa-moon"></i>
+        </span>
+      </div>
+      <div class="img-container">
+        <img src='funnyCat.jpg' alt='angry cat'>
+      </div>
+      <div class="sign-btns">
+        <a class="btn sign-up" href="#">sign up</a>
+        <a class="btn sign-in" href="#">sign in</a>
+      </div>
+
+    <h1 >welcome to 'too cute list'</h1>
+    <p>The ultimate 'to do list' platform, the best thing is that the website is barely functional, that means you get to focus more on doing the tasks and less on organizing them...cool (i guess).</p>
+     </div>
+
+  </section>
+
+  <!-- <div class=landing-page>
+    <header>
+       <div class="img-container">
+        <img src='funnyCat.jpg' alt='angry cat'>
+      </div>
+      <div class="sign-btns">
+        <a class="sign-btn sign-up" href="#">sign up</a>
+        <a class="sign-btn sign-in" href="#">sign in</a>
+      </div>
+    </header>
+    <h1 class="welcome">welcome to 'too cute list'</h1>
+    <p>the ultimate 'to do list' platform, the best thing is that the website is barely functional, that means you get to focus more on doing the tasks and less on organizing them...cool (i guess).</p>
+  </div> -->
+
+
+  <script src=main.js></script>
+</body>
+</html>
+
+
+
+<!--
+  1. changing cat photo every 1 sec
+  2. adding line through on 'too cute list' 'to do list'
+-->

@@ -1,0 +1,30 @@
+
+
+
+
+const allCheckboxes = document.querySelectorAll('[type=checkbox]'); 
+
+function recallChecked() {
+  for (let i = 0; i < allCheckboxes.length; i++) {
+    const currentItem = allCheckboxes[i];
+    if (window.localStorage[currentItem.id]) {
+      currentItem.setAttribute('checked', '');
+    }
+  }
+}
+
+recallChecked();
+
+for (const checkbox of allCheckboxes) {
+  checkbox.addEventListener('click', function() {
+    checkbox.setAttribute('checked', '');
+    if (window.localStorage[checkbox.id]) {
+      window.localStorage.removeItem([checkbox.id]);
+    } else {
+      window.localStorage[checkbox.id] = 'checked';
+    }
+  });
+}
+
+
+

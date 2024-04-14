@@ -142,6 +142,7 @@ function showTaskPrompt(task) {
 		taskTitle.value = task.querySelector('h1').innerText;
 		taskParagraph.value = task.querySelector('p').innerText;
 	}
+	taskTitle.focus();
 }
 
 function storeTask(index, title, paragraph) {

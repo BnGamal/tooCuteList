@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <meta charset="UTF-8">
+  <title>too cute list (dashboard)</title>
+</head>
+<body>
+  <header>
+    <a class="btn sign-up" href="#">sign up</a>
+
+    <div class="img-container">
+      <img src='imgs/funnyCat.jpg' alt='angry cat'>
+      <div class="img-background"></div>
+    </div>
+
+    <a class="btn sign-in" href="#">sign in</a>
+
+    <div class="btn ctrl-btn controls-min">
+      <i class="fa-solid fa-bars"></i> 
+    </div>
+
+    <div class="controls-max">
+      <span class="btn ctrl-btn switch-lang-btn">
+        <i class="fa-solid fa-earth-africa"></i>
+      </span><span class="btn ctrl-btn switch-theme-btn">
+        <i class="fa-regular fa-moon"></i>
+      </span>
+    </div>
+  </header>
+  <main>
+
+    <h1>Front-End Developer,<br> Job Roadmap</h1>
+    <div class="basics check-list-container">
+      <h1>Front-End Basics</h1>
+      <ul id="learning-list">
+          <li><input type="checkbox" id="html"><label for="html">Learn HTML</label></li>
+          <li><input type="checkbox" id="css"><label for="css">Learn CSS</label></li>
+          <li><input type="checkbox" id="4-templates"><label for="4-templates">4 Templates</label></li>
+          <li><input type="checkbox" id="js-before-dom"><label for="js-before-dom">Learn JS Before DOM</label></li>
+          <li><input type="checkbox" id="js-after-dom"><label for="js-after-dom">Learn JS After DOM</label></li>
+          <li><input type="checkbox" id="responsive-app-no-framework"><label for="responsive-app-no-framework">Responsive App Without Framework</label></li>
+          <li><input type="checkbox" id="responsive-app-without-framework"><label for="responsive-app-without-framework">Responsive App Without Framework</label></li>
+          <li><input type="checkbox" id="bootstrap-tailwind"><label for="bootstrap-tailwind">Learn Bootstrap, Tailwind</label></li>
+          <li><input type="checkbox" id="sass"><label for="sass">Learn SASS</label></li>
+          <li><input type="checkbox" id="pugjs"><label for="pugjs">Learn Pugjs</label></li>
+          <li><input type="checkbox" id="gulpjs"><label for="gulpjs">Learn Gulpjs</label></li>
+          <li><input type="checkbox" id="jest"><label for="jest">Learn Jest</label></li>
+          <li><input type="checkbox" id="vuejs"><label for="vuejs">Learn Vue.js</label></li>
+      </ul>  
+    </div>
+    <div class="certificates check-list-container">
+        <h1>Front-End Certificates</h1>
+        <ul id="certificates-list">
+            <li><input type="checkbox" id="cs50"><label for="cs50">CS50</label></li>
+            <li><input type="checkbox" id="free-code-camp"><label for="free-code-camp">FreeCodeCamp</label></li>
+        </ul>
+    </div>
+
+    <div class="projects check-list-container">
+        <h1>10 Functional Projects</h1>
+        <ul id="projects-list">
+            <li><input type="checkbox" id="project1"><label for="project1">Project 1</label></li>
+            <li><input type="checkbox" id="project2"><label for="project2">Project 2</label></li>
+            <!-- Add more projects with appropriate IDs -->
+        </ul>
+    </div>
+
+    <div class="tools check-list-container">
+        <h1>Cool Tools</h1>
+        <ul id="tools-list">
+            <li><input type="checkbox" id="git-github"><label for="git-github">Git & Github</label></li>
+            <li><input type="checkbox" id="powershell"><label for="powershell">Powershell</label></li>
+            <li><input type="checkbox" id="vim"><label for="vim">VIM</label></li>
+        </ul>
+    </div>
+
+  </main>
+
+  <script src=dashboard.js></script>
+</body>
+</html>
+

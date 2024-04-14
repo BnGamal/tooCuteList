@@ -1,0 +1,109 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  font-size: 12px;
+}
+
+body {
+  font-family: monospace;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* components */
+
+.btn {
+  pointer-events: all;
+  margin: 7px;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0 6px 0px 1px black;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctrl-btn {
+  width: 50px;
+  height: 50px;
+}
+
+.controls-min {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (min-width: 600px) {
+  .controls-min {
+    display: none !important;
+  }
+}
+
+.controls-max {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (min-width: 600px) {
+  .controls-max {
+    display: block;
+  }
+}
+
+.img-container {
+  width: 250px;
+}
+
+.img-background {
+  position: absolute;
+  width: 284px;
+  height: 176px;
+  border-radius: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* .img-background {
+  background :linear-gradient(to bottom, transparent 41%, white 41%); 
+  position: absolute;
+  width: 284px;
+  height: 176px;
+  border-radius: 50%;
+  top: 14px;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+} */
+
