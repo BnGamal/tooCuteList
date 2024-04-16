@@ -17,6 +17,7 @@ function displayAllTasks() {
 		const taskId = i;
 		const currentTask = storedTasks[i];
 		const title = currentTask["title"];
+		console.log('the title is:', title);
 		const paragraph = currentTask["paragraph"];
 		const done = currentTask["done"];
 		const task = createTask(taskId, title, paragraph, done);
@@ -120,12 +121,11 @@ confirmPrompt.addEventListener('click', function() {
 	if (updating) {
 		// console.log('updating', updating, currentIndex, title, paragraph);
 		storeTask(currentIndex, title, paragraph);
-		hideTaskPrompt();
 	} else if (!updating) {
 		// console.log('making new task', updating, title, paragraph);
 		storeTask(false, title, paragraph);
-		hideTaskPrompt();
 	}
+	hideTaskPrompt();
 	rewriteStoredTasks();
 	displayAllTasks();
 });

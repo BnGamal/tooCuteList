@@ -5,12 +5,6 @@
 - [x] the logo goes right when the 'menu' button changes it's text to 'close' since it's somehow shorter
 - [x] add the tab title in the head + check missing meta tags
 ## Problems to Solve:
-- [ ] Change the carousel tasks areas, they look awful
-- [ ] Made another uneccessary div for the carousel overflow
-- [ ] Change the landing tasks' text
-- [ ] The padding-top/margin-top of the element under the logo is not dynamic
-- [ ] Change `querySelector` with `getElementById`, using multiple html files it's hard to choose specific elements
-- [ ] title doesn't perserve it's place when it's empty and the paragraph is not empty
 ## Want to Add:
 - [ ] Cosider the timeline of the task added (prepend vs append)
 - [ ] make the 'not functional yet' hover effect follow the cursor
