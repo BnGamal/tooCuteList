@@ -1,22 +1,17 @@
-
-
-
-
 const mainMenuBtn = document.getElementById('main-menu-btn');
 const mainMenuBtnText = document.querySelector('#main-menu-btn .text');
-const mainMenuBtnIcon =document.querySelector('#main-menu-btn i')
+const mainMenuBtnIcon =document.querySelector('#main-menu-btn i');
 const mainMenu = document.getElementById('main-menu');
+let mainMenuBtnTextLabels = ['close', 'menu'];
+let mainMenuBtnIconLabels = ['fa-solid',  'fa-xmark','fa-solid', 'fa-bars'];
 mainMenuBtn.addEventListener('click', () => {
 	showMainMenu();
-})
-
-let mainMenuBtnTextChoices = ['close', 'menu'];
-let mainMenuBtnIconChoices = ['fa-solid',  'fa-xmark','fa-solid', 'fa-bars'];
+});
 function showMainMenu() {
 	mainMenu.classList.toggle('show-item--flex');
-	mainMenuBtnText.innerText = mainMenuBtnTextChoices[0];
+	mainMenuBtnText.innerText = mainMenuBtnTextLabels[0];
 	mainMenuBtnIcon.classList = [];
-	mainMenuBtnIcon.classList.add(mainMenuBtnIconChoices[0], mainMenuBtnIconChoices[1]);
-	mainMenuBtnTextChoices.reverse();
-	mainMenuBtnIconChoices.reverse();
-}
+	mainMenuBtnIcon.classList.add(mainMenuBtnIconLabels[0], mainMenuBtnIconLabels[1]);
+	mainMenuBtnTextLabels.reverse();
+	mainMenuBtnIconLabels.reverse();
+};

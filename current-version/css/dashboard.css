@@ -1,6 +1,4 @@
-
-
-
+/* prompt */
 .task-prompt{
     display: none;
     padding: 1em;
@@ -10,22 +8,18 @@
     transform: translate(-50%, -50%);
     z-index: 999;
 }
-
 .task-prompt input {
     width: 100%;
     margin-bottom: 1em;
     box-shadow: none;
 }
-
 .title-input {
     font-weight: bold;
 }
-
 .prompt-btns {
     width: fit-content;
     margin-left: auto;
 }
-
 .prompt-btns > * {
     width: 50px;
     height: 50px;
@@ -36,37 +30,23 @@
     margin-left: .5em;
     font-size: 1.1rem;
 }
-
-/*bottom section*/
+/* bottom section */
 .bottom-section {
     display: grid;
     grid-template-rows: auto 1fr;
     padding-top: 4em;
     position: relative;
 }
-
 @media(min-width:500px) {
     .bottom-section {
         padding-top: 6em;
     }
 }
-
-.tasks-container {
-    padding: 1em 1em 3em 1em;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 1.5em;
-
-}
-
 .create-task {
     font-size: 1em;   
     width: 300px;
     margin: 2em auto 1em auto;
 }
-
 @media(min-width:500px) {
     .create-task {
         font-size: 1.25em;
@@ -76,38 +56,52 @@
         top: -1em;
   }
 }
+#small-clock {
+    width: max-content;
+    text-align: center;
+    position: fixed;
+    left: 1em;
+    bottom: 1em;
+    background: var(--secondary-clr-light);
+    border: 1px solid var(--primary-clr-light);
+    padding: .3em;
+    border-radius: 6px;
+    color: var(--primary-clr);
+    filter: opacity(0.9);
+    outline: 5px solid var(--bg-clr);
+}
+.tasks-container {
+    padding: 1em 1em 3em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5em;
 
+}
+/* task */
 .task {
-    /*  override from fat-button  */
     padding: 10px;
     border-radius: 5px;
-
     width: 300px;
     max-height: 250px;
-
     display: grid;
     grid-template-columns: 218px 1fr;
-    grid-template-rows: 100%;
-    gap: 0.5em;
-
+    grid-template-rows: calc(100% - 0.8rem) auto;
+    column-gap: 0.5em;
+    row-gap: 0.2em;
     transition: .5s ease-in-out;
 }
-
 .task-text {
-    /* override from fat-button */
     padding: 0 0.5em 0.5em 0.5em;
     border-radius: 5px;
     box-shadow: none;
-
     height: 100%;
     width: 100%;
-
     display: grid;
     grid-template-rows: auto 1fr;
-
     cursor: pointer;
 }
-
 .task-text h1 {
     overflow: hidden;
     white-space: nowrap;
@@ -116,22 +110,30 @@
     text-align: center;
     margin: 0.4em 0 0 0;
 }
-
 .task-text p {
     line-height: 1.2;
     margin: 0;
     overflow: auto;
     height: 100%;
 }
-
 .task-btns {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
-
 .task-btns > * {
     box-shadow: none;
     font-size: 1rem;
     flex: 1;
+}
+.task-date {
+    text-align: left;
+    color: var(--primary-clr);
+    font-size: 0.8rem;
+    line-height: 1;
+    opacity: .7;
+    transition: .5s ease-in-out;
+}
+.task-date-clicked {
+    color: var(--primary-clr-light);
 }

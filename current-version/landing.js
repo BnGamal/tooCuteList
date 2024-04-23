@@ -1,9 +1,4 @@
-
-
-
-
 const allLandingPageTasks = document.querySelectorAll('.carousel div');
-
 for (const task of allLandingPageTasks) {
 	task.addEventListener('click', function() {
 		const targetedTasksName = `.${this.classList.item(1)}`;
@@ -12,4 +7,4 @@ for (const task of allLandingPageTasks) {
 			task.classList.toggle('fat-button-not-bg-clicked');
 		}
 	})
-}
+};
