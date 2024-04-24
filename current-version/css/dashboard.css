@@ -1,5 +1,7 @@
 /* prompt */
 .task-prompt{
+    width: calc(100vw - 2em);
+    max-width: 500px;
     display: none;
     padding: 1em;
     position: absolute;
